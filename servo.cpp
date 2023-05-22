@@ -2,6 +2,8 @@
 #include <softPwm.h>
 #include <iostream>
 
+using namespace std;
+
 int main(){
      wiringPiSetup ();
     int servoPin = 0;
@@ -10,7 +12,12 @@ int main(){
     while(1){
         
         for(int x; x<1025; x++){
-            std::cout<<x;"/n";
+            cout<<x<<endl;
+            softPwmWrite (servoPin,x) ;
+            delay(200);
+        }
+        for(int y; x>0; x--){
+            cout<<x<<endl;
             softPwmWrite (servoPin,x) ;
             delay(200);
         }
