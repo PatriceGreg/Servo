@@ -5,20 +5,22 @@
 using namespace std;
 
 int main(){
+    int x;
      wiringPiSetup ();
     int servoPin = 0;
     softPwmCreate(servoPin,0,30);
     
     while(1){
         
-        for(int x; x<31; x++){
+        for(x; x<31; x++){
             cout<<x<<endl;
             softPwmWrite (servoPin,x) ;
             delay(200);
         }
-        for(int y; y>0; y--){
-            cout<<y<<endl;
-            softPwmWrite (servoPin,y) ;
+
+        for(x; x>0; x--){
+            cout<<x<<endl;
+            softPwmWrite (servoPin,x) ;
             delay(200);
         }
     }
