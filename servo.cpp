@@ -10,9 +10,9 @@ int main(){
     while(1){
         
         for(int x; x<1025; x++){
-        std::cout<<x"/n";
-        softPwmWrite (servoPin,x) ;
-        delay(200);
+            std::cout<<x;"/n";
+            softPwmWrite (servoPin,x) ;
+            delay(200);
         }
     }
 }
