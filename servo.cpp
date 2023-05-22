@@ -8,9 +8,11 @@ int main(){
     softPwmCreate(servoPin,0,1024);
     
     while(1){
+        
+        for(int x; x<1025; x++){
         std::cout<<x"/n";
-        for(int x; x<1025; x++)
         softPwmWrite (servoPin,x) ;
         delay(200);
+        }
     }
 }
