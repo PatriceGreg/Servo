@@ -17,7 +17,7 @@ int main(){
             delay(200);
         }
         for(int y; y>0; y--){
-            cout<<x<<endl;
+            cout<<y<<endl;
             softPwmWrite (servoPin,x) ;
             delay(200);
         }
