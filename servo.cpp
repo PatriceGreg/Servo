@@ -2,7 +2,7 @@
 #include <softPwm.h>
 
 int main(){
-
+     wiringPiSetup ();
     byte servoPin = 0;
     pinMode(servoPin, OUTPUT);
     
