@@ -3,7 +3,7 @@
 
 int main(){
      wiringPiSetup ();
-    byte servoPin = 0;
+    int servoPin = 0;
     pinMode(servoPin, OUTPUT);
     
     while(1){
