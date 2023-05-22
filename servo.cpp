@@ -8,7 +8,7 @@ int main(){
     pinMode(servoPin, OUTPUT);
     
     while(1){
-        std::cout<<"Fuck Ahmed"
+        std::cout<<"Fuck Ahmed\n";
         digitalWrite(servoPin, LOW);
         delay(500);
         digitalWrite(servoPin,HIGH);
