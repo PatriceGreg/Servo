@@ -5,7 +5,7 @@
 int main(){
      wiringPiSetup ();
     int servoPin = 0;
-    softPwmCreate(servoPin,0,255)
+    softPwmCreate(servoPin,0,255);
     
     while(1){
         std::cout<<"Fuck Ahmed\n";
