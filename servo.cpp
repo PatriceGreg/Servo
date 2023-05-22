@@ -9,9 +9,9 @@ int main(){
     
     while(1){
         std::cout<<"Fuck Ahmed\n";
-        softPwmWrite (servoPin,50) ;
-        delay(500);
+        softPwmWrite (servoPin,255) ;
+        delay(1000);
         softPwmWrite (servoPin,5) ;
-        delay(500);
+        delay(1000);
     }
 }
