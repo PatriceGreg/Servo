@@ -7,11 +7,11 @@ using namespace std;
 int main(){
      wiringPiSetup ();
     int servoPin = 0;
-    softPwmCreate(servoPin,0,1024);
+    softPwmCreate(servoPin,0,255);
     
     while(1){
         
-        for(int x; x<1025; x++){
+        for(int x; x<256; x++){
             cout<<x<<endl;
             softPwmWrite (servoPin,x) ;
             delay(200);
