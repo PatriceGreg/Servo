@@ -5,13 +5,13 @@
 int main(){
      wiringPiSetup ();
     int servoPin = 0;
-    pinMode(servoPin, OUTPUT);
+    softPwmCreate(servoPin,0,255)
     
     while(1){
         std::cout<<"Fuck Ahmed\n";
-        digitalWrite(servoPin, LOW);
+        softPwmWrite (servoPin,50) ;
         delay(500);
-        digitalWrite(servoPin,HIGH);
+        softPwmWrite (servoPin,5) ;
         delay(500);
     }
 }
