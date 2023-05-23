@@ -15,13 +15,13 @@ int main(){
         for(x; x<31; x++){
             cout<<x<<endl;
             softPwmWrite (servoPin,x) ;
-            delay(200);
+            delay(700);
         }
 
         for(x; x>0; x--){
             cout<<x<<endl;
             softPwmWrite (servoPin,x) ;
-            delay(200);
+            delay(700);
         }
     }
 }
